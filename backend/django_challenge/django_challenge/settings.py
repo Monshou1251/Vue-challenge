@@ -122,7 +122,7 @@ USE_TZ = True
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 
 
-BASE_IMAGE_URL = "http://localhost:8000/static/media/gallery/"
+# BASE_IMAGE_URL = "http://localhost:8000/static/media/gallery/"
 
 STATIC_URL = "static/"
 

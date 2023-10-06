@@ -40,7 +40,7 @@ def get_painting(request):
     """
     user_input = request.GET.get("input")
 
-    sql_query = f"SELECT * FROM myapp_painting WHERE (artist LIKE '%{user_input}%') AND is_public = 1"
+    sql_query = f"SELECT * FROM myapp_painting WHERE artist LIKE '%{user_input}%' AND is_public = 1"
 
     with connection.cursor() as cursor:
         cursor.execute(sql_query)
